@@ -1,0 +1,57 @@
+.new-img-form {
+    box-sizing: border-box;
+    width: clamp(250px, 40vw, 450px);
+    height: fit-content;
+    padding: 0.25rem;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #777;
+    border-radius: 2px;
+    box-shadow: 0px 10px 20px 1px #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    transition: 0.2s ease-in width, 0.2s ease-in height;
+}
+
+.inputs-container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new-img-form input[type = text] {
+    width: 90%;
+    font-size: 1.1rem;
+    margin: 1px;
+}
+
+#submit {
+    width: 5.5rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    padding: auto;
+    border: none;
+    border-radius: 10px;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    background-color:rgba(0, 144, 211);
+    grid-area: "b1";
+}
+
+#submit:active {
+    filter: brightness(80%);
+}
+
+@media only screen and (max-width: 600px) {
+    .new-img-form {
+        width: 85vw;
+        margin: 0;
+    }
+}

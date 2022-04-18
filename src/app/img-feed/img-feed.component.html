@@ -1,0 +1,7 @@
+<div class="img-feed" [ngClass]="{
+    'img-clicked': imageClicked
+}">
+    <app-new-photo (upload)="checkSubmitted($event)"></app-new-photo>
+    <app-img *ngFor="let photo of photoArr" [photo]="photo" (imageIsClicked)="checkClicked($event)" (delete)="checkDelete($event)" class="app-image"></app-img>
+    <div class="overlay"></div>
+</div>

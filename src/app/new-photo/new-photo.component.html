@@ -1,0 +1,8 @@
+<form class="new-img-form" (ngSubmit)="submitPhoto()">
+    <div class="inputs-container">
+        <input type="text" name="title" id="title" [(ngModel)]="newPhoto.title" [required]="true" placeholder="Title">
+        <input type="text" name="thumbnailUrl" id="thumbnail-url" [(ngModel)]="newPhoto.thumbnailUrl" [required]="true" placeholder="Thumbnail URL (optional)">
+        <input type="text" name="url" id="url" [(ngModel)]="newPhoto.url" [required]="true" placeholder="Image URL">
+    </div>
+    <input type="submit" value="Submit" id="submit">
+</form>

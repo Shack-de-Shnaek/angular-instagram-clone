@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #aaa;
+    overflow: auto;
+    overflow: overlay;
+    scrollbar-gutter: stable both-edges;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    z-index: 1000;
+}

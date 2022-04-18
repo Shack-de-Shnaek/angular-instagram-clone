@@ -1,0 +1,18 @@
+<div class="img-container" [ngClass]="{'clicked': clicked}">
+    <img src="{{clicked ? photo.url : photo.thumbnailUrl}}" alt="{{photo.title}}" (click)="toggleClick()" [ngClass]="{
+        'thumbnail': !clicked,
+        'img': clicked
+    }">
+    <h3 class="title">{{photo.title}}</h3>
+    <form class="controls-container">
+        <div class="input-wrapper control-wrapper">
+            <input type="text" id="title" [(ngModel)]="inputTitle" name="inputTitle" placeholder="Title">
+            <input type="text" id="thumbnail-url" [(ngModel)]="inputThumbnailUrl" name="inputThumbnailUrl" placeholder="Thumbnail URL">
+            <input type="text" id="img-url" [(ngModel)]="inputUrl" name="inputUrl" placeholder="Photo URL">
+        </div>
+        <div class="button-wrapper control-wrapper">
+            <button id="save" (click)="saveUpdate()" type="button">Save</button>
+            <button id="delete" (click)="deleteImage()" type="button">Delete</button>
+        </div>
+    </form>
+</div>
