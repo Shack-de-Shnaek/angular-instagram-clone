@@ -33,15 +33,17 @@
 
 #submit {
     width: 5.5rem;
-    height: 2rem;
-    font-size: 1.5rem;
+    height: 1.75rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333;
     padding: auto;
     border: none;
     border-radius: 10px;
     line-height: 1.5rem;
     text-align: center;
     cursor: pointer;
-    background-color:rgba(0, 144, 211);
+    background-color:rgb(0, 192, 240);
     grid-area: "b1";
 }
 

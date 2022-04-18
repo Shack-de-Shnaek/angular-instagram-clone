@@ -83,8 +83,10 @@
 
 .controls-container button {
     width: 5.5rem;
-    height: 2rem;
-    font-size: 1.5rem;
+    height: 1.75rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333;
     padding: auto;
     border: none;
     border-radius: 10px;
